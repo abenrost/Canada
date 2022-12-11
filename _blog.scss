@@ -1,0 +1,48 @@
+
+#blog {
+    .container {
+            
+        h2 {
+            @include h2titles;
+        }
+        div { 
+            width: 70%;
+            height: 70vh; 
+            margin: auto;
+            background-size: cover;
+            background-position: center center;
+            margin-top: 0;
+            @include box;
+
+            @media screen and (max-width: 992px) {
+                width: 95%;
+            }
+            
+
+           h3 {
+            text-align: center;
+            color: $secolor;
+            font-size: 3em;
+            font-family: 'oswald', sans-serif;
+           }
+        }
+
+        #allarticles {
+            width: 90%;
+            margin: auto;
+
+            h3 {
+                text-align: center;
+                font-size: 2em;
+                font-family: 'oswald', sans-serif;
+                a {
+                    text-decoration: none;
+                    color: $color3;
+                }
+            }
+            p {
+                @include parag;
+            }
+        }
+    }
+}

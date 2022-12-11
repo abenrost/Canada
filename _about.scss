@@ -1,0 +1,58 @@
+body {
+    #about {
+        #heroabout {
+            width: 90%;
+            margin: auto;
+            height: 70vh; 
+            background-repeat: no-repeat;
+            background-position: center right;
+            @media screen and (max-width: 915px){
+                background-size: 50%;
+            }
+            @media screen and (min-width: 916px) and (max-width: 991px){
+                background-position: bottom right;
+            }
+            @media screen and (min-width: 992px) and (max-width: 1190px){
+                background-size: 60%;
+            }
+            h2 {
+                font-size: 3.5em;
+                font-family: 'oswald',sans-serif;
+                margin-bottom: 0;
+                color: $color1;
+                text-align: center;
+                // Animation du texte
+                animation-duration: 3s;
+                animation-name: slidein;
+                animation-iteration-count: 6s;
+                animation-direction: alternate;
+                //  Fin Animation du texte
+
+                @media screen and (max-width: 991px){
+                    font-size: 2em;
+                }
+            }
+            p {
+                width: 40%;
+                margin-top: 5%;
+                @include parag;
+                @media screen and (max-width: 991px){
+                    width: 100%;
+                }
+                @media screen and (min-width: 992px) and (max-width: 1199px){
+                    font-size: 1.2em;
+                }
+            }
+            div {
+                width: 50%;
+                display: flex;
+                @media screen and (max-width: 991px){
+                    width: 100%;
+                    flex-direction: column;
+                }
+            }
+            
+
+        }
+    }
+}

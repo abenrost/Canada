@@ -1,0 +1,30 @@
+//rounded btn styles
+@mixin box {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+@mixin parag {
+    font-size: 1.5em;
+    font-family: 'roboto',sans-serif;
+    @media screen and (max-width: 991px){
+        font-size: 1em;
+    }
+}
+
+@mixin h2titles {
+    font-size: 3.5em;
+        font-family: 'oswald',sans-serif;
+        margin-bottom: 0;
+        color: $color1;
+        text-align: center;
+        // Animation du texte
+        animation-duration: 3s;
+        animation-name: slidein;
+        animation-iteration-count: 6s;
+        animation-direction: alternate;
+        //  Fin Animation du texte
+
+        @media screen and (max-width: 991px){
+            font-size: 3em;
+        }
+}

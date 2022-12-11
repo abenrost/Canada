@@ -1,0 +1,49 @@
+body {
+   
+    #home {
+        
+
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+
+        div {
+            width: 75%;
+            height: 45%; 
+            margin: auto;
+            background-size: cover;
+            margin-top: 0;
+            @include box;
+        }
+
+        figure {
+            align-self: center;
+        }
+
+        h2 {
+            @include h2titles;
+        }
+
+        h1 {
+            font-family: 'oswald',sans-serif;
+            font-weight: 600;
+            font-size: 4em;
+            color: $color1;
+            margin-block: 0;
+            text-align: center;
+            // Animation du texte
+            animation-duration: 5s;
+            animation-name: slidein;
+            animation-iteration-count: 6s;
+            animation-direction: alternate;
+            //  Fin Animation du texte
+
+            @media screen and (max-width: 991px){
+                font-size: 3.5em;
+            }
+        }
+
+        
+        
+    }
+}

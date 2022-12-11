@@ -1,0 +1,25 @@
+/* Theme Name: Canada
+Description: Thème personnalisé pour le site du Blog
+Version: 0.1
+Author: ahmed
+*/
+@import 'variables';
+@import 'mixins';
+@import 'animation';
+@import 'header';
+@import 'index';
+@import 'about';
+@import 'blog';
+@import 'single';
+@import 'lecanada';
+@import 'contact';
+@import 'privacy';
+@import 'footer';
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+

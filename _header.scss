@@ -1,0 +1,71 @@
+body {
+    header {
+        background-color: $color1;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        nav {
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            @media screen and (max-width: 991px){
+              height: 80%;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                @media screen and (max-width: 991px){
+                  flex-wrap: wrap;
+                  padding-left: 0;
+                  gap: 10%;
+                }
+                li {
+                  a {
+                    text-decoration: none;
+                    font-size: 2em;
+                    color: $secolor;
+                    font-family: 'pacifico',sans-serif;
+                    position: relative;
+                  }   
+                  a::before, a::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    height: 2px;
+                    background-color: $secolor;
+                    transform: scaleX(0);
+                    transition: transform 0.5s ease;
+                  }
+                    
+                  a::before {
+                    top: 0;
+                    transform-origin: center right;
+                  }
+                    
+                  a:hover::before {
+                    transform-origin: center left;
+                    transform: scaleX(1);
+                  }
+                    
+                  a::after {
+                    bottom: 0;
+                    transform-origin: center left;
+                  }
+                    
+                  a:hover::after {
+                    transform-origin: center right;
+                    transform: scaleX(1);
+                  }
+                }
+            }
+        }
+
+       
+    }
+}

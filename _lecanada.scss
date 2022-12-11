@@ -1,0 +1,56 @@
+#primary {
+
+    #content {
+        #backghero {
+            h2 {
+                @include h2titles;
+            }
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 70vh;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 10vh;
+            @include box;
+
+            @media screen and (max-width: 991px){
+                width: 95%;
+                background-position: center center;
+            }
+        }
+
+        section {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 3em; 
+            flex-direction: column;
+            
+
+            img {
+                @include box;
+                margin-top: 5vh;
+                max-width: 100%;
+                height: auto;
+                
+            }
+
+            div {
+                @include box;
+                padding: 2em;
+                border-radius: 2em;
+                background-color: $color3;
+                h2 {
+                    font-size: 2.5em;
+                    font-family: 'oswald', sans-serif;
+                }
+                h3 {
+                    font-size: 2em;
+                    font-family: 'pacifico', sans-serif;
+                }
+            }
+        }
+    }
+}

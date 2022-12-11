@@ -1,0 +1,30 @@
+#privacy {
+    section {
+        text-align: center;
+
+        h2 {
+            font-size: 2.5em;
+            color: $color2;
+        }
+
+        nav {
+            div {
+                ul {
+                    display: flex;
+                    justify-content: space-evenly;
+                    li {
+                        a {
+                            font-size: 1.5em;
+                            color: $color1;
+                            font-family: 'roboto', sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+
+        p {
+            @include parag;
+        }
+    }
+}
